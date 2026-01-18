@@ -13,3 +13,11 @@ venv/
 # Fichiers OS
 .DS_Store
 Thumbs.db
+
+
+# Logs
+*.log
+
+# Fichiers secrets
+.env
+
