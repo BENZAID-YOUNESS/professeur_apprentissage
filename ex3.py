@@ -16,14 +16,14 @@ def main():
         affiche_menu()   
         choix = input("quel est ton choix ? ") 
         
-        choix == "1"
-        article = input("ajouter un article : ")
-        if article not in shopping:
-            shopping.append(article)
-            print(f"{article} : à était ajouter .", shopping)
-            continue
-        else:
-            print(f"{article} : éxiste déja dans la liste .", shopping)
-        break
+        if choix == "1":
+            article = input("ajouter un article : ")
+            if article not in shopping:
+                shopping.append(article)
+                print(f"{article} : à était ajouter .", shopping)
+                continue
+            else:
+                (f"{article} : éxiste déja dans la liste .", shopping)
+            break
 if __name__ == "__main":
     main()
