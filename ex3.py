@@ -15,14 +15,15 @@ def main():
     while True:
         affiche_menu()   
         choix = input("quel est ton choix ? ") 
+        
         choix == "1"
         article = input("ajouter un article : ")
         if article not in shopping:
             shopping.append(article)
             print(f"{article} : à était ajouter .", shopping)
-            #continue
+            continue
         else:
             print(f"{article} : éxiste déja dans la liste .", shopping)
-
+        break
 if __name__ == "__main":
     main()
