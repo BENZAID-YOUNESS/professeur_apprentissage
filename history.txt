@@ -148,3 +148,10 @@
 2026-02-03 20:41:12 | ADD | veste
 2026-02-03 20:41:16 | EXPORT_CSV | file=exports\josef\josef_2026-02-03_20-41-16.csv | items=2
 2026-02-03 20:41:22 | CLEAR_LIST | apres_export
+2026-02-03 23:00:00 | CLIENT | maria
+2026-02-03 23:00:00 | START | lancement du programme
+2026-02-03 23:00:00 | LOAD | 0 article(s) chargé(s)
+2026-02-03 23:00:13 | ADD | jupe
+2026-02-03 23:00:13 | ADD | veste
+2026-02-03 23:00:17 | EXPORT_CSV | file=exports\maria\maria_2026-02-03_23-00-17.csv | items=2
+2026-02-03 23:00:21 | CLEAR_LIST | apres_export
