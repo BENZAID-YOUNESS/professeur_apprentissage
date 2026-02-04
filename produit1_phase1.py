@@ -1,10 +1,28 @@
+
+
+# =========================
+# PRODUIT : Smart List Generator
+# =========================
+
+from config import (APP_NAME,
+                    APP_VERSION,
+                    APP_AUTHOR,
+                    CHEMIN_LISTE,
+                    CHEMIN_HISTORY,
+                    EXPORTS_FOLDER
+                    )
+
+def afficher_header():
+    print("=" * 40)
+    print(f"{APP_NAME} (v{APP_VERSION})")
+    print(f"Auteur : {APP_AUTHOR}")
+    print("=" * 40)
+
 import os
 import csv
 from datetime import datetime
 
 
-FICHIER_LISTE = "shopping.txt"
-HISTORY_FICHIER = "history.txt"
 CLIENT = ""
 
 # =========================
@@ -115,7 +133,7 @@ def log_action(action, details=""):
     if details:
         ligne += f" | {details}"
 
-    with open(HISTORY_FICHIER, "a", encoding="utf-8") as f:
+    with open(CHEMIN_HISTORY, "a", encoding="utf-8") as f:
         f.write(ligne + "\n")
 
 
@@ -124,7 +142,7 @@ def charger_liste():
     """Charge la liste depuis shopping.txt si le fichier existe."""
     global shopping
     try:
-        with open(FICHIER_LISTE, "r", encoding="utf-8") as f:
+        with open(CHEMIN_LISTE, "r", encoding="utf-8") as f:
             shopping = [ligne.strip() for ligne in f if ligne.strip()]
     except FileNotFoundError:
         shopping = []  # normal au premier lancement
@@ -132,9 +150,18 @@ def charger_liste():
 
 def sauvegarder_liste():
     """Sauvegarde la liste dans shopping.txt (une ligne = un article)."""
-    with open(FICHIER_LISTE, "w", encoding="utf-8") as f:
+    with open(CHEMIN_LISTE, "w", encoding="utf-8") as f:
         for article in shopping:
             f.write(article + "\n")
+
+
+
+
+
+        
+
+
+
 
 def demander_choix_menu():
     """Retourne un choix valide parmi '1'..'5' (string)."""
@@ -219,6 +246,7 @@ def supprimer_par_nom():
 # PROGRAMME
 # =========================
 def main():
+    afficher_header()
     print("=== Smart List Generator (Phase 1) ===")
     print("Démarré :", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     global CLIENT

@@ -1,0 +1,10 @@
+2026-02-04 01:36:41 | CLIENT | you
+2026-02-04 01:36:41 | START | lancement du programme
+2026-02-04 01:36:41 | LOAD | 0 article(s) chargé(s)
+2026-02-04 01:37:00 | ADD | machine
+2026-02-04 02:12:02 | CLIENT | david
+2026-02-04 02:12:02 | START | lancement du programme
+2026-02-04 02:12:02 | LOAD | 1 article(s) chargé(s)
+2026-02-04 02:12:35 | ADD | x + y
+2026-02-04 02:12:43 | EXPORT_CSV | file=exports\david\david_2026-02-04_02-12-43.csv | items=2
+2026-02-04 02:12:47 | CLEAR_LIST | apres_export
