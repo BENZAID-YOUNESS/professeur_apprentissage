@@ -1,10 +1,13 @@
-2026-02-04 01:36:41 | CLIENT | you
-2026-02-04 01:36:41 | START | lancement du programme
-2026-02-04 01:36:41 | LOAD | 0 article(s) chargé(s)
-2026-02-04 01:37:00 | ADD | machine
-2026-02-04 02:12:02 | CLIENT | david
-2026-02-04 02:12:02 | START | lancement du programme
-2026-02-04 02:12:02 | LOAD | 1 article(s) chargé(s)
-2026-02-04 02:12:35 | ADD | x + y
-2026-02-04 02:12:43 | EXPORT_CSV | file=exports\david\david_2026-02-04_02-12-43.csv | items=2
-2026-02-04 02:12:47 | CLEAR_LIST | apres_export
+2026-02-04 13:34:38 | CLIENT | david
+2026-02-04 13:34:38 | START | lancement du programme
+2026-02-04 13:34:38 | LOAD | 0 article(s) chargé(s)
+2026-02-04 13:35:31 | ADD | (x * y) - 8
+2026-02-04 13:36:07 | EXPORT_CSV | client=david | file=david_2026-02-04_13-36-07.csv | items=1
+2026-02-04 13:36:10 | CLEAR_LIST | apres_export
+2026-02-04 23:22:37 | CLIENT | java
+2026-02-04 23:22:37 | START | lancement du programme
+2026-02-04 23:22:37 | LOAD | 0 article(s) chargé(s)
+2026-02-04 23:23:05 | ADD | veste
+2026-02-04 23:23:05 | ADD | jupe
+2026-02-04 23:23:11 | EXPORT_CSV | client=java | file=java_2026-02-04_23-23-11.csv | items=2
+2026-02-04 23:23:53 | CLEAR_LIST | apres_export

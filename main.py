@@ -9,7 +9,8 @@ from config import (APP_NAME,
                     APP_AUTHOR,
                     CHEMIN_LISTE,
                     CHEMIN_HISTORY,
-                    EXPORTS_FOLDER
+                    EXPORTS_FOLDER,
+                    DATA_FOLDER
                     )
 
 def afficher_header():
@@ -21,6 +22,10 @@ def afficher_header():
 import os
 import csv
 from datetime import datetime
+# OUTILS SYSTEME
+def assurer_dossiers():
+    os.makedirs(DATA_FOLDER, exist_ok=True)
+    os.makedirs(EXPORTS_FOLDER, exist_ok=True)
 
 
 CLIENT = ""
@@ -101,7 +106,12 @@ def exporter_csv():
                 writer.writerow([CLIENT, ts, i, article])
 
         print(f"✅ Export CSV créé : {chemin}")
-        log_action("EXPORT_CSV", f"file={chemin} | items={nb_items}")
+        print(f"-Statistiques :")
+        print(f"- Client : {CLIENT}")
+        print(f"- Articles exportés : {nb_items}")
+        print(f"- Fichier : {nom_fichier}")
+        
+        log_action("EXPORT_CSV", f"client={CLIENT} | file={nom_fichier} | items={nb_items}")
 
         conf = input("Vider la liste après export ? (o/n) : ").strip().lower()
 
@@ -247,6 +257,9 @@ def supprimer_par_nom():
 # =========================
 def main():
     afficher_header()
+    assurer_dossiers()
+    print(f"Dossier data : {DATA_FOLDER}")
+    print(f"Dossier exports : {EXPORTS_FOLDER}")
     print("=== Smart List Generator (Phase 1) ===")
     print("Démarré :", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     global CLIENT

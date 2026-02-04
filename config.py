@@ -1,5 +1,5 @@
 APP_NAME = "Smart List Generator"
-APP_VERSION = "1.0.0"
+APP_VERSION = "1.0.1"
 APP_AUTHOR = "Youness Benzaid"
 
 DATA_FOLDER = "data"
