@@ -4,14 +4,15 @@
 # PRODUIT : Smart List Generator
 # =========================
 
-from config import (APP_NAME,
-                    APP_VERSION,
-                    APP_AUTHOR,
-                    CHEMIN_LISTE,
-                    CHEMIN_HISTORY,
-                    EXPORTS_FOLDER,
-                    DATA_FOLDER
-                    )
+from src.config import (
+    APP_NAME,
+    APP_VERSION,
+    APP_AUTHOR,
+    CHEMIN_LISTE,
+    CHEMIN_HISTORY,
+    EXPORTS_FOLDER,
+    DATA_FOLDER
+)
 
 def afficher_header():
     print("=" * 40)
