@@ -1,22 +1,19 @@
-# Smart List Generator
+# SmartList Airbnb Phase7
 
-Générateur simple de listes intelligentes (shopping, ménage, déménagement, voyage).
+Une checklist digitale simple pour les hôtes Airbnb : préparer, nettoyer et vérifier un logement rapidement, avec export et historique.
 
----
+## Fonctionnalités
+- Ajouter des éléments à une liste
+- Supprimer par nom
+- Afficher et trier la liste
+- Supprimer par numéro (liste numérotée)
+- Compter les éléments
+- Vider la liste avec confirmation
+- Export CSV dans un dossier `exports/`
+- Historique des actions dans `data/history.txt`
 
-## Installation
-
-1. Installer Python 3.10+
-2. Télécharger ce projet
-3. Ouvrir un terminal dans le dossier du projet
-
----
-
-## Lancer l'application
-
-Dans le terminal, tape :
+## Lancer le programme
+Dans le dossier du projet :
 
 ```bash
-python run.py
-
-
+python -m src.main
