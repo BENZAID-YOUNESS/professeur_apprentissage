@@ -3,8 +3,9 @@ from datetime import datetime
 from src.ui import afficher_header, afficher_menu, demander_choix_menu, demander_client, demander_template
 from src.storage import charger_liste, log_action
 from src.exports import exporter_csv
-from src.storage import sauvegarder_liste, supprimer_par_numero, supprimer_par_nom, ajouter_articles, afficher_liste
-from src.storage import charger_template
+from src.storage import sauvegarder_liste, supprimer_par_numero, supprimer_par_nom, ajouter_articles, afficher_liste, charger_template
+
+
 
 def run_app():
     afficher_header()
@@ -44,6 +45,44 @@ def run_app():
             sauvegarder_liste(shopping)
             log_action("DEL_NAME", f"{len(shopping)} total")
             print("-" * 40)
+  
+
+        
+        elif choix == "5":
+            nom = demander_template()
+            if nom:
+                items = charger_template(nom)
+                if items:
+                    shopping.clear()
+                    shopping.extend(items)
+                    sauvegarder_liste(shopping)
+                    log_action("")
+                
+                print("-" * 40)
+
+  
+
+        elif choix == "5":
+            nom = demander_template()  # ex: "arrivee" / "menage" / "depart"
+            if nom:
+                articles = charger_template(nom)  # lit templates/nom.txt
+                if articles:
+                    shopping.clear()
+                    shopping.extend(articles)
+                    sauvegarder_liste(shopping)
+                    log_action("TEMPLATE", f"chargé: {nom} ({len(shopping)} articles)")
+                    print(f"✅ Template '{nom}' chargé ({len(shopping)} articles).")
+                else:
+                    print("❌ Template introuvable ou vide.")
+
+
+    
+
+
+        elif choix == "6":
+            print("EXPORT_CSV", f"{len(shopping)} item(s)")   
+            print("-" * 40)
+
 
 
         elif choix == "0":
@@ -52,16 +91,55 @@ def run_app():
             print("À bientôt 👋")
             print("-" * 40)
 
-
             break
 
-        elif choix == "6":
-            exporter_csv(client, shopping)
-            log_action("EXPORT_CSV", f"{len(shopping)} item(s)")
-            print("-" * 40)
+            
 
 
-        elif choix == "5":
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        '''elif choix == "5":
             nom = demander_template()
             items = charger_template(nom)
             if items is None:
@@ -71,4 +149,6 @@ def run_app():
                 sauvegarder_liste(shopping)  #écrit dans data/shopping.txt
                 log_action("LOAD_TEMPLATE", f"{nom} | {len(shopping)} item(s)")
                 print(f"✅ Template '{nom}' chargé avec succès ({len(shopping)} articles).")
-                print("-" * 40)
+                print("-" * 40)'''
+
+    

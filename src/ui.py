@@ -43,7 +43,7 @@ import os
 
 def demander_template():
     dossier = "templates"
-    fichiers = [f for f in os.listdir(dossier) if f.endswith(".txt")]
+    fichiers = sorted([f for f in os.listdir(dossier) if f.endswith(".txt")])
 
     if not fichiers:
         print("Aucun template trouvé.")
