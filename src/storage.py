@@ -4,6 +4,20 @@ from datetime import datetime
 from src.config import CHEMIN_LISTE, CHEMIN_HISTORY, DATA_FOLDER
 
 
+
+def charger_template(nom_template):
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    template_path = os.path.join(base_dir, "templates", f"{nom_template}.txt")
+
+    if not os.path.exists(template_path):
+        return None
+
+    with open(template_path, "r", encoding="utf-8") as f:
+        lignes = [line.strip() for line in f.readlines()]
+    return [x for x in lignes if x]
+
+
+
 def assurer_dossiers():
     os.makedirs(DATA_FOLDER, exist_ok=True)
 

@@ -11,3 +11,61 @@
 2026-02-04 23:23:05 | ADD | jupe
 2026-02-04 23:23:11 | EXPORT_CSV | client=java | file=java_2026-02-04_23-23-11.csv | items=2
 2026-02-04 23:23:53 | CLEAR_LIST | apres_export
+2026-02-05 17:21:55 | CLIENT | you
+2026-02-05 17:21:55 | START | lancement du programme
+2026-02-05 17:21:56 | LOAD | 0 article(s) chargé(s)
+2026-02-05 17:22:13 | ADD | 3 total
+2026-02-05 17:22:42 | DEL_NUM | 2 total
+2026-02-05 17:22:59 | DEL_NAME | 1 total
+2026-02-05 17:23:11 | EXPORT_CSV | 1 item(s)
+2026-02-05 17:23:54 | QUIT | fin du programme
+2026-02-05 18:28:53 | CLIENT | gfd
+2026-02-05 18:28:53 | START | lancement du programme
+2026-02-05 18:28:53 | LOAD | 1 article(s) chargé(s)
+2026-02-05 18:28:57 | QUIT | fin du programme
+2026-02-05 19:24:14 | CLIENT | h
+2026-02-05 19:24:14 | START | lancement du programme
+2026-02-05 19:24:14 | LOAD | 1 article(s) chargé(s)
+2026-02-05 19:24:17 | QUIT | fin du programme
+2026-02-05 19:24:52 | CLIENT | yanis
+2026-02-05 19:24:52 | START | lancement du programme
+2026-02-05 19:24:52 | LOAD | 1 article(s) chargé(s)
+2026-02-05 19:40:15 | CLIENT | kan
+2026-02-05 19:40:15 | START | lancement du programme
+2026-02-05 19:40:15 | LOAD | 1 article(s) chargé(s)
+2026-02-05 19:43:13 | CLIENT | yanike
+2026-02-05 19:43:13 | START | lancement du programme
+2026-02-05 19:43:13 | LOAD | 1 article(s) chargé(s)
+2026-02-05 20:12:11 | CLIENT | jean
+2026-02-05 20:12:11 | START | lancement du programme
+2026-02-05 20:12:11 | LOAD | 1 article(s) chargé(s)
+2026-02-05 20:12:36 | LOAD_TEMPLATE | menage | 7 item(s)
+2026-02-05 23:36:33 | CLIENT | mikael
+2026-02-05 23:36:33 | START | lancement du programme
+2026-02-05 23:36:33 | LOAD | 0 article(s) chargé(s)
+2026-02-05 23:41:15 | CLIENT | ben
+2026-02-05 23:41:15 | START | lancement du programme
+2026-02-05 23:41:15 | LOAD | 0 article(s) chargé(s)
+2026-02-05 23:42:39 | CLIENT | david
+2026-02-05 23:42:39 | START | lancement du programme
+2026-02-05 23:42:39 | LOAD | 0 article(s) chargé(s)
+2026-02-05 23:50:01 | CLIENT | josef
+2026-02-05 23:50:01 | START | lancement du programme
+2026-02-05 23:50:01 | LOAD | 0 article(s) chargé(s)
+2026-02-05 23:52:24 | CLIENT | david
+2026-02-05 23:52:24 | START | lancement du programme
+2026-02-05 23:52:24 | LOAD | 0 article(s) chargé(s)
+2026-02-05 23:52:53 | ADD | 3 total
+2026-02-05 23:53:12 | QUIT | fin du programme
+2026-02-05 23:54:55 | CLIENT | david
+2026-02-05 23:54:55 | START | lancement du programme
+2026-02-05 23:54:55 | LOAD | 3 article(s) chargé(s)
+2026-02-05 23:56:22 | LOAD_TEMPLATE | voyage | 3 item(s)
+2026-02-05 23:57:16 | ADD | 6 total
+2026-02-05 23:57:51 | QUIT | fin du programme
+2026-02-06 00:24:31 | CLIENT | sofi
+2026-02-06 00:24:31 | START | lancement du programme
+2026-02-06 00:24:31 | LOAD | 6 article(s) chargé(s)
+2026-02-06 00:24:45 | LOAD_TEMPLATE | voyage | 3 item(s)
+2026-02-06 00:27:03 | ADD | 4 total
+2026-02-06 00:27:14 | QUIT | fin du programme

@@ -1,14 +1,22 @@
-# Professeur Apprentissage
+# Smart List Generator
 
-Projet d’apprentissage Python (Jour 2).
+Générateur simple de listes intelligentes (shopping, ménage, déménagement, voyage).
 
-## Contenu
-- `jour_02_menu_shopping.py` : menu shopping (ajouter / supprimer / afficher / trier / pop / compter)
+---
 
-## Objectif
-S’entraîner avec :
-- listes
-- boucles `while`
-- conditions `if/elif/else`
-- `input()`
-- `pop()`
+## Installation
+
+1. Installer Python 3.10+
+2. Télécharger ce projet
+3. Ouvrir un terminal dans le dossier du projet
+
+---
+
+## Lancer l'application
+
+Dans le terminal, tape :
+
+```bash
+python run.py
+
+
